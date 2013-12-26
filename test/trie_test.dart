@@ -67,14 +67,16 @@ void main() {
     expect(trie.contains('two'), true);
   });
 
-  Trie trie1 = new Trie();
-  trie1.addStrings(['one', 'one']);
+
   // testing adding duplicates
   test('trie should contain one ', () {
-
+    Trie trie1 = new Trie();
+    trie1.addStrings(['one', 'one']);
     expect(trie1.contains('one'), true);
     expect(trie1.contains('two'), false);
   });
+
+
 
 
 }
